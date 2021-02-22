@@ -17,16 +17,39 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
+            "allowedCommonJsDependencies": [
+              "tsparticles"        
+            ],
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images/favicon.png"
             ],
             "styles": [
+              "src/assets/vendors/mdi/css/materialdesignicons.min.css",
+              "src/assets/vendors/base/vendor.bundle.base.css",
+              "src/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css",
+              "src/assets/css/style.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendors/base/vendor.bundle.base.js",
+              "src/assets/vendors/chart.js/Chart.min.js",
+              "src/assets/vendors/datatables.net/jquery.dataTables.js",
+              "src/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js",
+              "src/assets/js/off-canvas.js",
+              "src/assets/js/hoverable-collapse.js",
+              "src/assets/js/template.js",
+              "src/assets/js/dashboard.js",
+              "src/assets/js/data-table.js",
+              "src/assets/js/jquery.dataTables.js",
+              "src/assets/js/dataTables.bootstrap4.js",
+              "src/assets/js/jquery.cookie.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -85,12 +108,32 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/images/favicon.png"
             ],
             "styles": [
+              "src/assets/vendors/mdi/css/materialdesignicons.min.css",
+              "src/assets/vendors/base/vendor.bundle.base.css",
+              "src/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css",
+              "src/assets/css/style.css",
+              "node_modules/font-awesome/css/font-awesome.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendors/base/vendor.bundle.base.js",
+              "src/assets/vendors/chart.js/Chart.min.js",
+              "src/assets/vendors/datatables.net/jquery.dataTables.js",
+              "src/assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js",
+              "src/assets/js/off-canvas.js",
+              "src/assets/js/hoverable-collapse.js",
+              "src/assets/js/template.js",
+              "src/assets/js/dashboard.js",
+              "src/assets/js/data-table.js",
+              "src/assets/js/jquery.dataTables.js",
+              "src/assets/js/dataTables.bootstrap4.js",
+              "src/assets/js/jquery.cookie.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +162,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "admin-panel-app"
+    }
+  },
+  "defaultProject": "admin-panel-app",
+  "cli": {
+    "analytics": "4b91753c-a58d-446b-b2ff-3e2d2f259e99"
+  }
 }
